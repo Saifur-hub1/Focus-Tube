@@ -1,0 +1,59 @@
+{
+  "kind": "youtube#playlistListResponse",
+  "etag": "zORCMvynV5M7JosZScqYcLmAPto",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#playlist",
+      "etag": "SFS0-lD55rICUBVDZpjtpMvFDBI",
+      "id": "PL_XxuZqN0xVAWGDKIzcn6NWikVkljJQZc",
+      "snippet": {
+        "publishedAt": "2024-05-03T10:30:25Z",
+        "channelId": "UCrmHQdRbYKFsB602Duho4Tw",
+        "title": "REST API Design Workshop",
+        "description": "In today's interconnected world, APIs are the backbone of modern applications. However, a poorly designed API can be a nightmare for developers and hinder your product's success.\n\nThis 3-day workshop on REST API Design is your one-stop shop to crafting powerful, user-friendly APIs.\n\nDay 1: From Chaos to Clarity\n\n- Demystify REST APIs: Learn the core concepts and why good design matters.\n- Build a Scalable Foundation: Discover the elements that ensure your API can handle growth.\n- Master the RESTful Approach: Unlock the power of constraints for a robust API.\n\nDay 2: Craft an Exceptional Experience\n\n- Fine-tune Your Responses: Deliver clear, well-structured data for seamless integration.\n- Versioning Made Easy: Learn strategies to manage API evolution without breaking things.\n- Handle Errors Like a Pro: Craft informative error messages that guide developers.\n\nDay 3: Tools and Techniques for Success\n\n- Document Like a Champion: Leverage OpenAPI Specification (Swagger) for clear documentation.\n- Fortify Your API: Implement robust security measures to protect your data.\n- Manage Your Masterpiece: Discover tools and best practices for API management.\n\nBy the end of this workshop, you'll be equipped to design, build, and secure APIs that developers love to use. Enroll now and unlock the full potential of your APIs!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/EbHf2aCuPVM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/EbHf2aCuPVM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/EbHf2aCuPVM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/EbHf2aCuPVM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/EbHf2aCuPVM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Stack Learner",
+        "localized": {
+          "title": "REST API Design Workshop",
+          "description": "In today's interconnected world, APIs are the backbone of modern applications. However, a poorly designed API can be a nightmare for developers and hinder your product's success.\n\nThis 3-day workshop on REST API Design is your one-stop shop to crafting powerful, user-friendly APIs.\n\nDay 1: From Chaos to Clarity\n\n- Demystify REST APIs: Learn the core concepts and why good design matters.\n- Build a Scalable Foundation: Discover the elements that ensure your API can handle growth.\n- Master the RESTful Approach: Unlock the power of constraints for a robust API.\n\nDay 2: Craft an Exceptional Experience\n\n- Fine-tune Your Responses: Deliver clear, well-structured data for seamless integration.\n- Versioning Made Easy: Learn strategies to manage API evolution without breaking things.\n- Handle Errors Like a Pro: Craft informative error messages that guide developers.\n\nDay 3: Tools and Techniques for Success\n\n- Document Like a Champion: Leverage OpenAPI Specification (Swagger) for clear documentation.\n- Fortify Your API: Implement robust security measures to protect your data.\n- Manage Your Masterpiece: Discover tools and best practices for API management.\n\nBy the end of this workshop, you'll be equipped to design, build, and secure APIs that developers love to use. Enroll now and unlock the full potential of your APIs!"
+        }
+      },
+      "contentDetails": {
+        "itemCount": 3
+      },
+      "player": {
+        "embedHtml": "\u003ciframe width=\"640\" height=\"360\" src=\"http://www.youtube.com/embed/videoseries?list=PL_XxuZqN0xVAWGDKIzcn6NWikVkljJQZc\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen\u003e\u003c/iframe\u003e"
+      }
+    }
+  ]
+}
