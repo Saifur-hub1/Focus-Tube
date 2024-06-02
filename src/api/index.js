@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const API_KEY = 'AIzaSyD1HpdnK1l6w9WiRLiHAaaVIKDaZuvave8';
-const playlistId = "PL_XxuZqN0xVAw_wmOs1iVfdFGiAX-wGKF";
-const getPlaylist = async () => {
+
+const PlayListItem = () => {
+  const getPlaylist = async (playlistId, pageToken='', result = []) => {
   
   try {
     const { data } = await axios.get(`https://www.googleapis.com/youtube/v3/playlistItems`, {
@@ -10,38 +11,43 @@ const getPlaylist = async () => {
         key: API_KEY,
         part: 'id, contentDetails, snippet',
         maxResults: 50,
-        playlistId: playlistId
+        playlistId: playlistId,
+        pageToken: pageToken
       }
     })
-
-    return {
-      data
+    result = [...result, ...data.items];
+    if (data.nextPageToken) {
+      result = getPlaylist(playlistId, pageToken = data.nextPageToken, result);
     }
+    
+    return result;  
   } catch(error) {
     console.log('Error fetching playlist data', error);
     throw error;
   }
+  }
+  
+  const getPlaylistDetail = async (playlistId)=>{
+    try {
+      const {data} = await axios.get('https://www.googleapis.com/youtube/v3/playlists', {
+        params: {
+          key: API_KEY,
+          id: playlistId,
+          part: 'contentDetails, id, snippet, player'
+        }
+      })
 
+      return data.items[0].snippet;
+    } catch(error) {
+      console.log('Error fetching playlist detail', error);
+      throw error;
+    }
+  }
+  
   return {
-    playList
+    getPlaylist,
+    getPlaylistDetail
   }
 }
 
-export default getPlaylist;
-
-/*
-try {
-    const response = await axios.get(`https://www.googleapis.com/youtube/v3/playlistItems`, {
-      params: {
-        key: API_KEY,
-        part: 'id,contentDetails,snippet',
-        maxResults: 50,
-        playlistId: playlistId
-      }
-    });
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching playlist data', error);
-    throw error;  // Rethrow the error after logging it
-  }
-*/
+export default PlayListItem;
